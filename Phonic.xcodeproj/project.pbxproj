@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		210BC48B181AE318006F796E /* QRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 210BC48A181AE318006F796E /* QRCodeController.m */; };
+		210BC48D181AF554006F796E /* logo@Retain .png in Resources */ = {isa = PBXBuildFile; fileRef = 210BC48C181AF554006F796E /* logo@Retain .png */; };
 		2110428B16FA05DD00D3F0F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2110428A16FA05DD00D3F0F9 /* UIKit.framework */; };
 		2110428D16FA05DD00D3F0F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2110428C16FA05DD00D3F0F9 /* Foundation.framework */; };
 		2110428F16FA05DD00D3F0F9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2110428E16FA05DD00D3F0F9 /* CoreGraphics.framework */; };
@@ -127,6 +128,7 @@
 /* Begin PBXFileReference section */
 		210BC489181AE318006F796E /* QRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeController.h; sourceTree = "<group>"; };
 		210BC48A181AE318006F796E /* QRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeController.m; sourceTree = "<group>"; };
+		210BC48C181AF554006F796E /* logo@Retain .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@Retain .png"; sourceTree = "<group>"; };
 		2110428716FA05DD00D3F0F9 /* 臺中市空品淨化區導覽.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "臺中市空品淨化區導覽.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2110428A16FA05DD00D3F0F9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2110428C16FA05DD00D3F0F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -336,6 +338,7 @@
 		2110427E16FA05DD00D3F0F9 = {
 			isa = PBXGroup;
 			children = (
+				210BC48C181AF554006F796E /* logo@Retain .png */,
 				213FED0E17B9E03F00A021C4 /* logo @2x.png */,
 				213FED0C17B9E03400A021C4 /* logo.png */,
 				2110429016FA05DD00D3F0F9 /* Phonic */,
@@ -691,6 +694,7 @@
 				213FF1E2170F12970052E9A4 /* 喬木介紹.fw.png in Resources */,
 				213FF1E3170F12970052E9A4 /* 喬木介紹底圖.fw.png in Resources */,
 				213FF1E4170F12970052E9A4 /* 回上頁.png in Resources */,
+				210BC48D181AF554006F796E /* logo@Retain .png in Resources */,
 				213FF1E5170F12970052E9A4 /* 回喬木介紹01.fw.png in Resources */,
 				213FF1E6170F12970052E9A4 /* 回喬木介紹02.fw.png in Resources */,
 				213FF1E7170F12970052E9A4 /* 回空品區介紹01.fw.png in Resources */,
@@ -875,8 +879,8 @@
 		211042AB16FA05DD00D3F0F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Hung-Ming Chen (NHPJ3CC74D)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hung-Ming Chen (NHPJ3CC74D)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TE-WANG CHIEN (8GA8W6DH4J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: TE-WANG CHIEN (8GA8W6DH4J)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Phonic/Resource\"",
@@ -888,8 +892,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "臺中市空品淨化區導覽";
-				PROVISIONING_PROFILE = "6CABF9CF-49E7-4892-92F4-82CAF5AE4820";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6CABF9CF-49E7-4892-92F4-82CAF5AE4820";
+				PROVISIONING_PROFILE = "1239E8C6-1C38-41E7-AC33-7408DB671981";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1239E8C6-1C38-41E7-AC33-7408DB671981";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
@@ -899,8 +903,8 @@
 		211042AC16FA05DD00D3F0F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Hung-Ming Chen (NHPJ3CC74D)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hung-Ming Chen (NHPJ3CC74D)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TE-WANG CHIEN (8GA8W6DH4J)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: TE-WANG CHIEN (8GA8W6DH4J)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Phonic/Resource\"",
@@ -912,8 +916,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "臺中市空品淨化區導覽";
-				PROVISIONING_PROFILE = "6CABF9CF-49E7-4892-92F4-82CAF5AE4820";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6CABF9CF-49E7-4892-92F4-82CAF5AE4820";
+				PROVISIONING_PROFILE = "1239E8C6-1C38-41E7-AC33-7408DB671981";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1239E8C6-1C38-41E7-AC33-7408DB671981";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;

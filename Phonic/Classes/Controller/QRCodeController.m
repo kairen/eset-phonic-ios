@@ -10,6 +10,8 @@
 
 @interface QRCodeController ()
 
+
+@property(nonatomic ,strong) UIButton *cancelButton;
 @end
 
 @implementation QRCodeController
@@ -18,7 +20,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
 	[self setupCamera];
+    self.cancelButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    self.cancelButton.frame = CGRectMake(0, self.view.frame.size.height - 40, self.view.frame.size.width, 40);
+    [self.cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
+    [self.cancelButton addTarget:self action:@selector(delayDismodal) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.cancelButton];
 }
 
 - (void)setupCamera
@@ -58,7 +66,7 @@
     for (AVMetadataObject *metadata in metadataObjects) {
         if ([metadata.type isEqualToString:AVMetadataObjectTypeQRCode]) {
             QRCode = [(AVMetadataMachineReadableCodeObject *)metadata stringValue];
-            [self deallocAllSession];
+            
             [self.delegate scannerCompleteGetValue:QRCode];
             [self performSelector:@selector(delayDismodal) withObject:nil afterDelay:0.5];
             break;
@@ -68,6 +76,7 @@
 
 -(void) delayDismodal
 {
+    [self deallocAllSession];
      [self dismissViewControllerAnimated:YES completion:NO];
 }
 

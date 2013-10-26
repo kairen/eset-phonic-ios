@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+
 @protocol QRCodeDelegate;
 
 @interface QRCodeController : UIViewController<AVCaptureMetadataOutputObjectsDelegate>

@@ -63,11 +63,11 @@
     if (self.pickView == nil)
     {
         self.pickView = [EPPickerView newPickerView:self action:@selector(unitPickDoneAction:)];
-        [self.view.window addSubview: self.pickView];
-        
         self.pickView.dataSource = [NSMutableArray arrayWithCapacity:self.nameArray.count];
         for (NSString *str in self.nameArray)
             [self.pickView.dataSource addObject:str];
+
+        [self.view.window addSubview: self.pickView];
     }
 }
 
@@ -154,11 +154,10 @@
     if (self.pickView == nil)
     {
         self.pickView = [EPPickerView newPickerView:self action:@selector(areaPickDoneAction:)];
-        [self.view.window addSubview: self.pickView];
-        
         self.pickView.dataSource = [NSMutableArray arrayWithCapacity:self.areaNames.count];
         for (NSString *str in self.areaNames)
             [self.pickView.dataSource addObject:str];
+        [self.view.window addSubview: self.pickView];
     }
 }
 - (void) areaPickDoneAction:(id)sender
@@ -207,12 +206,11 @@
     if (self.pickView == nil)
     {
         self.pickView = [EPPickerView newPickerView:self action:@selector(treePickDoneAction:)];
-        [self.view.window addSubview: self.pickView];
-        
         self.pickView.dataSource = [NSMutableArray arrayWithCapacity:self.treeNames.count];
         for (NSString *str in self.treeNames)
             [self.pickView.dataSource addObject:str];
-    }
+        [self.view.window addSubview: self.pickView];
+        }
 }
 
 - (void) treePickDoneAction:(id)sender
@@ -259,11 +257,10 @@
     if (self.pickView == nil)
     {
         self.pickView = [EPPickerView newPickerView:self action:@selector(numberPickDoneAction:)];
-        [self.view.window addSubview: self.pickView];
-        
         self.pickView.dataSource = [NSMutableArray arrayWithCapacity:self.numIds.count];
         for (NSString *str in self.numIds)
             [self.pickView.dataSource addObject:str];
+        [self.view.window addSubview: self.pickView];
     }
 }
 

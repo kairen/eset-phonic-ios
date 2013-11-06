@@ -63,11 +63,12 @@
     if (self.pickView == nil)
     {
         self.pickView = [EPPickerView newPickerView:self action:@selector(unitPickDoneAction:)];
-        [self.view.window addSubview: self.pickView];
         
         self.pickView.dataSource = [NSMutableArray arrayWithCapacity:self.areaNames.count];
         for (NSString *str in self.areaNames)
             [self.pickView.dataSource addObject:str];
+        
+        [self.view.window addSubview: self.pickView];
     }
 }
 
@@ -125,7 +126,6 @@
 
 -(void) createAreaNameBtnWitg:(NSDictionary*)dict
 {
-    
         [UIView animateWithDuration:0.5 animations:^{
            for(UIView *aView in self.taiChungMapView.listView.subviews)
            {

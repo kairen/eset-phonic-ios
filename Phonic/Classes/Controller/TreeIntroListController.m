@@ -56,11 +56,10 @@
     if (self.pickView == nil)
     {
         self.pickView = [EPPickerView newPickerView:self action:@selector(treePickDoneAction:)];
-        [self.view.window addSubview: self.pickView];
-        
         self.pickView.dataSource = [NSMutableArray arrayWithCapacity:self.treeNames.count];
         for (NSString *str in self.treeNames)
             [self.pickView.dataSource addObject:str];
+        [self.view.window addSubview: self.pickView];
     }
 }
 

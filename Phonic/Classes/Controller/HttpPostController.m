@@ -12,8 +12,8 @@
 
 #define HTTP_TIMEOUT 10
 
-typedef void(^CustomLoadHttpRequestHandler)(void(^)(id obj));
-typedef void(^CustomPostHttpRequestHandler)(void(^)(id obj));
+typedef void(^CustomLoadHttpRequestHandler)(id obj);
+typedef void(^CustomPostHttpRequestHandler)(id obj);
 static const char * CustomLoadHttpRequestKey = "CustomLoadHttpRequestKey";
 static const char * CustomPostHttpRequestKey = "CustomPostHttpRequestKey";
 
@@ -27,8 +27,7 @@ static const char * CustomPostHttpRequestKey = "CustomPostHttpRequestKey";
 @implementation HttpPostController
 
 
-- (id) init
-{
+- (instancetype) init {
     self = [super init];
     if (self)
     {
@@ -49,8 +48,7 @@ static const char * CustomPostHttpRequestKey = "CustomPostHttpRequestKey";
     
     CustomLoadHttpRequestHandler handler = (CustomLoadHttpRequestHandler)objc_getAssociatedObject(self,(const void*)CustomLoadHttpRequestKey);
     objc_setAssociatedObject(self, CustomLoadHttpRequestKey, nil, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    if (handler)
-    {
+    if (handler) {
         handler(obj);
     }
 }
@@ -62,12 +60,12 @@ static const char * CustomPostHttpRequestKey = "CustomPostHttpRequestKey";
     
     CustomPostHttpRequestHandler handler = (CustomPostHttpRequestHandler)objc_getAssociatedObject(self,(const void*)CustomPostHttpRequestKey);
     objc_setAssociatedObject(self, CustomPostHttpRequestKey, nil, OBJC_ASSOCIATION_COPY_NONATOMIC);
-    if (handler)
-    {
-        if (!str)
+    if (handler) {
+        if (!str) {
             handler(nil);
-        else
+        } else {
             handler([NSError errorWithDomain:str code:code userInfo:nil]);
+        }
     }
 }
 
@@ -146,8 +144,7 @@ static const char * CustomPostHttpRequestKey = "CustomPostHttpRequestKey";
     }
     else
     {
-       
-            [self callHttpRequestHandler:nil];
+       [self callHttpRequestHandler:nil];
     }
 }
 

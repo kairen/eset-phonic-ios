@@ -661,6 +661,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Bai-Kai-Ren";
+				TargetAttributes = {
+					2110428616FA05DD00D3F0F9 = {
+						DevelopmentTeam = S8FBP4YLUA;
+					};
+				};
 			};
 			buildConfigurationList = 2110428216FA05DD00D3F0F9 /* Build configuration list for PBXProject "Phonic" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -842,8 +847,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "10C13B5F-0C39-4C90-943E-660899358173";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "10C13B5F-0C39-4C90-943E-660899358173";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -869,8 +874,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "10C13B5F-0C39-4C90-943E-660899358173";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "10C13B5F-0C39-4C90-943E-660899358173";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -879,8 +884,8 @@
 		211042AB16FA05DD00D3F0F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: TE-WANG CHIEN (8GA8W6DH4J)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: TE-WANG CHIEN (8GA8W6DH4J)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hung-Ming Chen (NHPJ3CC74D)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Phonic/Resource\"",
@@ -889,11 +894,11 @@
 				GCC_PREFIX_HEADER = "Phonic/Phonic-Prefix.pch";
 				HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2";
 				INFOPLIST_FILE = "Phonic/Phonic-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "臺中市空品淨化區導覽";
-				PROVISIONING_PROFILE = "1239E8C6-1C38-41E7-AC33-7408DB671981";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1239E8C6-1C38-41E7-AC33-7408DB671981";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = NO;
 				WRAPPER_EXTENSION = app;
@@ -903,8 +908,8 @@
 		211042AC16FA05DD00D3F0F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: TE-WANG CHIEN (8GA8W6DH4J)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: TE-WANG CHIEN (8GA8W6DH4J)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hung-Ming Chen (NHPJ3CC74D)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Phonic/Resource\"",
@@ -913,11 +918,11 @@
 				GCC_PREFIX_HEADER = "Phonic/Phonic-Prefix.pch";
 				HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2";
 				INFOPLIST_FILE = "Phonic/Phonic-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "臺中市空品淨化區導覽";
-				PROVISIONING_PROFILE = "1239E8C6-1C38-41E7-AC33-7408DB671981";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1239E8C6-1C38-41E7-AC33-7408DB671981";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
